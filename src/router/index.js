@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginView from '@/components/LoginView.vue';
-import MembershipOptionView from "@/components/MembershipOptionView.vue";
+import MembershipOptionsView from "@/components/MembershipOptionsView.vue";
 
 
 const routes = [
-    { path: '/login', component: LoginView },
-    { path: '/business/:businessId/membership/options', component: MembershipOptionView },
+    { name: 'login', path: '/admin/login', component: LoginView },
+    { name: 'membershipOptions', path: '/business/:businessId/membership/options', component: MembershipOptionsView },
 ];
 
 const router = createRouter({

@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div>
-      <router-link to="/login">Login</router-link>
+      <router-link v-bind:to="{ name: 'login' }">Login</router-link>
     </div>
   </nav>
 </template>
